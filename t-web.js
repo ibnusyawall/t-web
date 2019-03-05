@@ -1,3 +1,6 @@
+/* created by ibnu syawall */
+/* T-Web ( Termux On Localhost )
+
 // ---------- module ----------
 
 var red = require('readline');  // npm install --save readline

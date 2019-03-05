@@ -1,5 +1,5 @@
 /* created by ibnu syawall */
-/* T-Web ( Termux On Localhost )
+/* T-Web ( Termux On Localhost ) */
 
 // ---------- module ----------
 

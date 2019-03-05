@@ -51,7 +51,7 @@ const why = red.createInterface({
 if (`${iya}` == 1)
 {
   she.echo(' ---------- Harap Tunggu ----------');she.echo('');
-  she.exec('pkg install ttyd && pkg install ssh'); why.close(); she.exec('clear off');
+  she.exec('pkg install ttyd && pkg install openssh'); why.close(); she.exec('clear off');
   she.echo(' ---------- Module Sudah Terinstall ----------');she.exec('clear off && ls');
   she.echo(pil + ' Silahkan Jalankan Ulang Dan Pilih No 1 atau 2 ' + ih)
 }

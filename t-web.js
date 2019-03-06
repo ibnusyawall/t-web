@@ -18,7 +18,7 @@ war.setTheme({
 
 // ---------- clear line ----------
 
-she.exec('clear off');
+she.exec('clear');
 
 // ---------- banner ----------
 
@@ -51,15 +51,15 @@ const why = red.createInterface({
 if (`${iya}` == 1)
 {
   she.echo(' ---------- Harap Tunggu ----------');she.echo('');
-  she.exec('pkg install ttyd -y && pkg install openssh -y'); why.close(); she.exec('clear off');
-  she.echo(' ---------- Module Sudah Terinstall ----------');she.exec('clear off && ls');
+  she.exec('pkg install ttyd -y && pkg install openssh -y'); why.close(); she.exec('clear');
+  she.echo(' ---------- Module Sudah Terinstall ----------');she.exec('clear && ls');
   she.echo(pil + ' Silahkan Jalankan Ulang Dan Pilih No 1 atau 2 ' + ih)
 }
 else if (`${iya}` == 2)
 {
   she.echo(' ---------- Setting Port ----------');
   why.question(pil + '!'.m + ih + 'Masukan Port : ', (hmm) => {
-    she.echo(' ---------- Harap Tunggu ----------');she.exec('clear off');
+    she.echo(' ---------- Harap Tunggu ----------');she.exec('clear');
     she.echo(' ---------- [ Tekan CTRL + C Untuk Keluar ] ----------');
     she.echo(` ---------- [       localhost:${hmm}        ] ----------`);why.close();
     she.echo(''); she.exec(`ttyd -p ${hmm} bash -x`);
@@ -69,18 +69,18 @@ else if (`${iya}` == 3)
 {
   she.echo(' ---------- Harap Tunggu ----------');
   why.question(pil + '!'.m + ih + 'Masukan Port Kamu : ', (gk) => {
-    she.exec('clear off');she.echo(' ---------- [ Salin Url Yang Berwarna Hijau ] ----------'); why.close();
+    she.exec('clear');she.echo(' ---------- [ Salin Url Yang Berwarna Hijau ] ----------'); why.close();
     she.exec(`ssh -R 80:127.0.0.1:${gk} serveo.net`);
   });
 }
 else if (`${iya}` == 0)
 {
-  she.echo(' ---------- Harap Tunggu ----------'); she.exec('clear off');
-  she.echo(' ---------- [ Thanks For Using This Tools ^_^ ] ----------'); why.close(); she.exec('clear off && ls');
+  she.echo(' ---------- Harap Tunggu ----------'); she.exec('clear');
+  she.echo(' ---------- [ Thanks For Using This Tools ^_^ ] ----------'); why.close(); she.exec('clear && ls');
 }
 else
 {
-  she.echo(pil + '!'.m + ih + 'Masukan Command Dengan Benar ! '); why.close(); she.exec('clear off && ls')
+  she.echo(pil + '!'.m + ih + 'Masukan Command Dengan Benar ! '); why.close(); she.exec('clear && ls')
 }; });
 
 // ---------- done ----------
